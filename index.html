@@ -164,16 +164,16 @@
                         <legend>Связаться со мной</legend>
 
                         <label for="name">Имя:</label>
-                        <input id="name"/><br>
+                        <input id="name" required /><br>
                         <label for="surname">Фамилия:</label>
-                        <input id="surname"/><br>
+                        <input id="surname" required /><br>
                         <label for="email" tipe="email">Email:</label>
-                        <input id="email"/><br>
+                        <input id="email" required /><br>
                         <label for="message">Сообщение:</label>
                         <input id="message"/><br>
                         <label for="agreement">
                             Согласен передать данные
-                            <input id="agreement" type="checkbox" checked/>
+                            <input id="agreement" type="checkbox" checked required />
                         </label><br>
                         <input type="submit" value="Отправить">
                     </fieldset>
@@ -181,12 +181,12 @@
             </section>
 
             <hr>
-            <section>
+            <!-- <section>
                 <p>
                     Файл резюме для примера: 
                     <a href="hexlet-cv-resume.pdf" target="_blank">Открыть PDF файл</a>
                 </p>
-            </section>
+            </section> -->
         </footer>
     </body>
 </html>
