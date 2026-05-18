@@ -1,0 +1,22 @@
+body {
+  background-color: #EAEAEA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1A73E8;
+}
+
+h2 {
+  clear: both;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    float: right;
+}
+
+#contacts {
+    width: 80%;
+}
