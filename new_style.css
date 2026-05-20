@@ -16,7 +16,31 @@ img {
 }
 
 .middle-title {
-    text-align: center
+    text-align: center;
+}
+
+#specialization {
+    color: #FEBC2C;
+}
+
+[id^="write"] {
+    border: 1px solid #FFFFFF;
+    background-color: #272B2F;
+    color: #FFFFFF;
+}
+
+.project {
+    background-color: #FEBC2C40;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    width: 600px;
+    height: 50px;
+    background-color: #FEBC2C;
 }
 
 section.left-column {
