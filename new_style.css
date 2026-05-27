@@ -1,4 +1,4 @@
-main {
+.main-page {
     margin: 0;
     padding: 0;
     display: flex;
@@ -6,7 +6,7 @@ main {
     min-height: 100vh;
 }
 
-img {
+.avatar {
     display: block;
     width: 400px;
     height: 400px;
@@ -19,14 +19,15 @@ img {
     text-align: center;
 }
 
-#specialization {
+.middle-title-yellow {
     color: #FEBC2C;
+    text-align: center;
 }
 
-[id^="write"] {
-    border: 1px solid #FFFFFF;
+.write {
+    border: 1px solid #FFF;
     background-color: #272B2F;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .project {
@@ -43,21 +44,21 @@ img {
     background-color: #FEBC2C;
 }
 
-section.left-column {
+.left-column {
     flex: 1;
     background-color: #272B2F;
-    color: #FFFFFF;
+    color: #FFF;
     padding: 25px;
     box-sizing: border-box;
 }
 
 .links {
-    color: #FFFFFF;
+    color: #FFF;
 }
 
-section.right-column {
+.right-column {
     flex: 1;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     padding: 25px;
     box-sizing: border-box;
 }
