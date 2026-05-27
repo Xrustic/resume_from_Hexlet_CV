@@ -3,6 +3,7 @@
 
     <head>
         <title>Резюме</title>
+        <link rel="stylesheet" href="./new_style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Resume">
@@ -10,183 +11,174 @@
     </head>
 
     <body>
-        <header>
-            <h1>Ольга Сесюнина</h1>
-            <h2>Junior Python-разработчик</h2>
-            <img src="./photo/xrustic123.jpg" alt="my photo" width="200" height="200">
-        </header>
+        <main class="main-page">
+            <section class="left-column">
+                <div>
+                    <img src="./photo/xrustic123.jpg" class="avatar" alt="my photo">
+                    <h1 class="middle-title">Ольга Сесюнина</h1>
+                    <h2 class="middle-title-yellow">Junior Python-разработчик</h2>
+                    <hr>
+                </div>
 
-        <main>
-            <section>
-                <h2 style="clear: both;">Контакты</h2>
-                <hr>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Почта</th>
-                            <th>Телефон</th>
-                            <th>GitHub</th>
-                            <th>Телеграм</th>
-                            <th>Дополнительные контакты</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="mailto:olga.sesyunina7@yandex.ru">olga.sesyunina7@yandex.ru</a>
-                            </td>
-                            <td>
-                                <a href="tel:+79531630528">+7(953)163-05-28</a>
-                            </td>
-                            <td>
-                                <a href="https://github.com/Xrustic">https://github.com/Xrustic</a>
-                            </td>
-                            <td>
-                                <a href="https://t.me/Xrustic_72">Ольга</a>
-                            </td>
-                            <td>
-                                <a href="https://career.habr.com/xrustic700">https://career.habr.com/xrustic700</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div>
+                    <h2>О себе</h2>
+                    <p>
+                        Не готов релоцироваться<br>
+                        Санкт-Петербург<br>
+                        Изучаю Английский язык.<br>
+                        Прошла обучение по профессии "Python-разработчик" в школе программирования Хекслет. Реализовала четыре
+                        учебных проекта.<br>
+                        В будущем хотела бы погрузиться в разработку компьютерных игр.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Контакты</h2>
+                    <table border="1" cellpadding="10" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <th>Почта</th>
+                                <td>
+                                    <a href="mailto:olga.sesyunina7@yandex.ru" class="links">olga.sesyunina7@yandex.ru</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Телефон</th>
+                                <td>
+                                    <a href="tel:+79531630528" class="links">+7(953)163-05-28</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>GitHub</th>
+                                <td>
+                                    <a href="https://github.com/Xrustic" class="links">https://github.com/Xrustic</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Телеграм</th>
+                                <td>
+                                    <a href="https://t.me/Xrustic_72" class="links">Ольга</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Дополнительные контакты</th>
+                                <td>
+                                    <a href="https://career.habr.com/xrustic700" class="links">https://career.habr.com/xrustic700</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <form action="message" method="post">
+                        <fieldset>
+                            <legend>Связаться со мной</legend>
+
+                            <label for="name">Имя:</label>
+                            <input id="name" class="write" required /><br>
+                            <label for="surname">Фамилия:</label>
+                            <input id="surname" class="write" required /><br>
+                            <label for="email" tipe="email">Email:</label>
+                            <input id="email" class="write" required /><br>
+                            <label for="message">Сообщение:</label>
+                            <input id="message" class="write"/><br>
+                            <label for="agreement">
+                                Согласен передать данные
+                                <input id="agreement" type="checkbox" checked required />
+                            </label><br>
+                            <input type="submit" value="Отправить">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
 
-            <section>
-                <h2>Описание</h2>
-                <hr>
-                <ul>
-                    <li>Обладаю базовыми знаниями языка программирования Python.</li>
-                    <li>Работаю с базами данных, классами, Django, Flask, HTML, SQL (PostgreSQL).</li>
-                    <li>Знакома с алгоритмами и структурой данных.</li>
-                    <li>
-                        Такими как:
-                        <ol>
-                            <li>списки</li>
-                            <li>словари</li>
-                            <li>кортежи</li>
-                            <li>рекурсия</li>
-                        </ol>
-                    </li>
-                    <li>Знаю как работать с Git.</li>
-                </ul>
-            </section>
+            <section class="right-column">
+                <div>
+                    <h2 class="square">Навыки</h2>
+                    <ul>
+                        <li>Английский язык: уровень A2-B1.</li>
+                        <li>Django, Flask, HTML, SQL (PostgreSQL).</li>
+                        <li>VScode и Ubuntu</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
 
-            <section>
-                <h2>Навыки</h2>
-                <hr>
-                <ul>
-                    <li>Английский язык: уровень A2-B1.</li>
-                    <li>Django, Flask, HTML, SQL (PostgreSQL).</li>
-                    <li>VScode и Ubuntu</li>
-                    <li>Git</li>
-                </ul>
-            </section>
+                <div>
+                    <h2 class="square">Описание</h2>
+                    <ul>
+                        <li>Обладаю базовыми знаниями языка программирования Python.</li>
+                        <li>Работаю с базами данных, классами, Django, Flask, HTML, SQL (PostgreSQL).</li>
+                        <li>Знакома с алгоритмами и структурой данных.</li>
+                        <li>
+                            Такими как:
+                            <ol>
+                                <li>списки</li>
+                                <li>словари</li>
+                                <li>кортежи</li>
+                                <li>рекурсия</li>
+                            </ol>
+                        </li>
+                        <li>Знаю как работать с Git.</li>
+                    </ul>
+                </div>
 
-            <section>
-                <h2>Описание проектов</h2>
-                <hr>
+                <div>
+                    <h2 class="square">Описание проектов</h2>
+                    <table class="project" border="1">
+                        <tbody>
+                            <tr>
+                                <th style="text-align: left;">Первый проект, который был завершен - 
+                                    <a href="https://github.com/Xrustic/brain_games">Игры разума.</a>
+                                </th>
+                                <td>
+                                    Описание: В проекте стояла задача реализовать математические игры. Благодаря этому проекту я научилась
+                                    пользоваться аскинемами.<br>
+                                    Стек: Pyhton, asciinema, poetry.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: left;">Второй проект - 
+                                    <a href="https://github.com/Xrustic/gendiff">Вычислитель отличий.</a>
+                                </th>
+                                <td>
+                                    Описание: В проекте я сравниваю несколько файлов между собой и вывожу их результат. Научилась работать с
+                                    тестами.<br>
+                                    Стек: Pyhton, asciinema, tests, poetry.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: left;">Третий проект - 
+                                    <a href="https://github.com/Xrustic/python-project-83">Анализатор страниц.</a>
+                                </th>
+                                <td>
+                                    Описание: В проекте нужно было создать сайт, который проверяет работоспособность сайта, ссылку которого вы
+                                    ввели в строке ввода адреса сайта. Научилась работать с Классами и Базами Данных.<br>
+                                    Стек: Pyhton, class, HTML, PostgreSQL, poetry.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: left;">Четвертый проект - 
+                                    <a href="https://github.com/Xrustic/python-project-52">Менеджер задач.</a>
+                                </th>
+                                <td>
+                                    Описание: В проекте нужно было сделать копию сайта примера, с выполнением его функционала. В этом проекте
+                                    углубилась в изучение Баз Данных, так же работала с Тестами и HTML.<br>
+                                    Стек: Pyhton, class, HTML, PostgreSQL, poetry, tests, DB, translate.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <table border="1">
-                    <tbody>
-                        <tr>
-                            <th style="text-align: left;">Первый проект, который был завершен - 
-                                <a href="https://github.com/Xrustic/brain_games">Игры разума.</a>
-                            </th>
-                            <td>
-                                Описание: В проекте стояла задача реализовать математические игры. Благодаря этому проекту я научилась
-                                пользоваться аскинемами.<br>
-                                Стек: Pyhton, asciinema, poetry.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="text-align: left;">Второй проект - 
-                                <a href="https://github.com/Xrustic/gendiff">Вычислитель отличий.</a>
-                            </th>
-                            <td>
-                                Описание: В проекте я сравниваю несколько файлов между собой и вывожу их результат. Научилась работать с
-                                тестами.<br>
-                                Стек: Pyhton, asciinema, tests, poetry.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="text-align: left;">Третий проект - 
-                                <a href="https://github.com/Xrustic/python-project-83">Анализатор страниц.</a>
-                            </th>
-                            <td>
-                                Описание: В проекте нужно было создать сайт, который проверяет работоспособность сайта, ссылку которого вы
-                                ввели в строке ввода адреса сайта. Научилась работать с Классами и Базами Данных.<br>
-                                Стек: Pyhton, class, HTML, PostgreSQL, poetry.
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="text-align: left;">Четвертый проект - 
-                                <a href="https://github.com/Xrustic/python-project-52">Менеджер задач.</a>
-                            </th>
-                            <td>
-                                Описание: В проекте нужно было сделать копию сайта примера, с выполнением его функционала. В этом проекте
-                                углубилась в изучение Баз Данных, так же работала с Тестами и HTML.<br>
-                                Стек: Pyhton, class, HTML, PostgreSQL, poetry, tests, DB, translate.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section>
-                <h2>Образование</h2>
-                <hr>
-                <p>
-                    Python-разработчик, Hexlet<br>
-                    Сентябрь 2023 - Март 2025
-                </p>
-            </section>
-
-            <section>
-                <h2>О себе</h2>
-                <hr>
-                <p>
-                    Не готов релоцироваться<br>
-                    Санкт-Петербург<br>
-                    Изучаю Английский язык.<br>
-                    Прошла обучение по профессии "Python-разработчик" в школе программирования Хекслет. Реализовала четыре
-                    учебных проекта.<br>
-                    В будущем хотела бы погрузиться в разработку компьютерных игр.
-                </p>
+                <div>
+                    <h2 class="square">Образование</h2>
+                    <p>
+                        Python-разработчик, Hexlet<br>
+                        Сентябрь 2023 - Март 2025
+                    </p>
+                </div>
             </section>
         </main>
-
-        <footer>
-            <hr>
-            <section>
-                <form action="message" method="post">
-                    <fieldset>
-                        <legend>Связаться со мной</legend>
-
-                        <label for="name">Имя:</label>
-                        <input id="name" required /><br>
-                        <label for="surname">Фамилия:</label>
-                        <input id="surname" required /><br>
-                        <label for="email" tipe="email">Email:</label>
-                        <input id="email" required /><br>
-                        <label for="message">Сообщение:</label>
-                        <input id="message"/><br>
-                        <label for="agreement">
-                            Согласен передать данные
-                            <input id="agreement" type="checkbox" checked required />
-                        </label><br>
-                        <input type="submit" value="Отправить">
-                    </fieldset>
-                </form>
-            </section>
-
-            <hr>
-            <!-- <section>
-                <p>
-                    Файл резюме для примера: 
-                    <a href="hexlet-cv-resume.pdf" target="_blank">Открыть PDF файл</a>
-                </p>
-            </section> -->
-        </footer>
     </body>
 </html>
